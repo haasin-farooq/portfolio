@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { FC, ReactNode } from "react";
 
 import "./globals.css";
+import { Navbar } from "@/components/Navbar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,7 +22,12 @@ interface RootLayoutProp {
 const RootLayout: FC<RootLayoutProp> = ({ children }) => {
   return (
     <html lang="en">
-      <body className={`min-h-screen ${inter.className}`}>{children}</body>
+      <body
+        className={`min-h-screen bg-gradient-to-t from-gray-900 ${inter.className}`}
+      >
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 };
