@@ -26,7 +26,7 @@ const RootLayout: FC<RootLayoutProp> = ({ children }) => {
         className={`min-h-screen bg-gradient-to-t from-gray-900 ${inter.className}`}
       >
         <Navbar />
-        <div className="mt-20 p-4 sm:p-8">{children}</div>
+        <div className="mt-20 p-8 sm:p-10">{children}</div>
       </body>
     </html>
   );
