@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import { FC, ReactNode } from "react";
 
 import "./globals.css";
-import { Navbar } from "@/components/Navbar";
+import { Navbar } from "@/components/navbar/Navbar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,7 +26,7 @@ const RootLayout: FC<RootLayoutProp> = ({ children }) => {
         className={`min-h-screen bg-gradient-to-t from-gray-900 ${inter.className}`}
       >
         <Navbar />
-        {children}
+        <div className="mt-20 p-4 sm:p-8">{children}</div>
       </body>
     </html>
   );
