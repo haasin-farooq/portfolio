@@ -7,13 +7,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        portfolio: {
-          slate: "rgba(65, 97, 116, 1)",
-        },
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };

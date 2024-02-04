@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Breakpoints, useMediaQuery } from "@/utils/hooks/use-media-query";
 import { motion } from "framer-motion";
 
-const COLOR_PORTFOLIO_SLATE = "rgba(65, 97, 116, 1)";
+const COLOR_PORTFOLIO_SLATE = "#67e8f9";
 
 export const NavMenu = () => {
   const isSM = useMediaQuery(Breakpoints.SM);

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { FC, ReactNode } from "react";
 
 import "./globals.css";
 import { Navbar } from "@/components/navbar/Navbar";
 
-const inter = Inter({
+const inter = Montserrat({
   subsets: ["latin"],
   display: "swap",
 });
@@ -23,7 +23,7 @@ const RootLayout: FC<RootLayoutProp> = ({ children }) => {
   return (
     <html lang="en">
       <body
-        className={`min-h-screen bg-gradient-to-t from-gray-900 ${inter.className}`}
+        className={`min-h-screen bg-gradient-to-t from-slate-900 ${inter.className}`}
       >
         <Navbar />
         <div className="mt-20 p-8 sm:p-10">{children}</div>
