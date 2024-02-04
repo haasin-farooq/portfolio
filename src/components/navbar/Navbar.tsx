@@ -1,7 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import Logo from "../../assets/images/logo.png";
-import Image from "next/image";
+
 import { NavMenu } from "./NavMenu";
 
 export const Navbar = () => {

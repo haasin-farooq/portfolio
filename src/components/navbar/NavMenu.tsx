@@ -1,10 +1,12 @@
 "use client";
 
-import { Fade as Hamburger } from "hamburger-react";
-import { NavLink } from "./NavLink";
-import { useState } from "react";
-import { Breakpoints, useMediaQuery } from "@/utils/hooks/use-media-query";
 import { motion } from "framer-motion";
+import { Fade as Hamburger } from "hamburger-react";
+import { useState } from "react";
+
+import { Breakpoints, useMediaQuery } from "@/utils/hooks/use-media-query";
+
+import { NavLink } from "./NavLink";
 
 const COLOR_PORTFOLIO_SLATE = "#67e8f9";
 

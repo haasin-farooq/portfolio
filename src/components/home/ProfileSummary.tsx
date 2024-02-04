@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 
-import ProfilePicture from "../../assets/images/profile-picture.png";
 import { Breakpoints, useMediaQuery } from "@/utils/hooks/use-media-query";
+
+import ProfilePicture from "../../assets/images/profile-picture.png";
 import { Button } from "../Button";
 
 export const ProfileSummary = () => {

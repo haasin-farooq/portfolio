@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import { FC, ReactNode } from "react";
 
 import "./globals.css";
+
 import { Navbar } from "@/components/navbar/Navbar";
 
 const inter = Montserrat({
