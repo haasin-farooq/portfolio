@@ -19,7 +19,7 @@ export const useMediaQuery = (query: Breakpoints, fallback = true): boolean => {
     const listener = () => setMatches(media.matches);
     window.addEventListener("resize", listener);
     return () => window.removeEventListener("resize", listener);
-  }, [query]);
+  }, [query, matches]);
 
   return matches ?? fallback;
 };
