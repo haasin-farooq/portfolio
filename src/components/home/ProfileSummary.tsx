@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Breakpoints, useMediaQuery } from "@/utils/hooks/use-media-query";
 
 import ProfilePicture from "../../assets/images/profile-picture.png";
-import { Button } from "../Button";
+import { Button } from "../common/Button";
 
 export const ProfileSummary = () => {
   const isSm = useMediaQuery(Breakpoints.SM);
