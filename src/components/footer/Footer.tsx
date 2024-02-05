@@ -4,6 +4,7 @@ import {
   INSTAGRAM_URL,
   LINKEDIN_URL,
 } from "@/utils/constants";
+
 import { FooterLink } from "./FooterLink";
 
 export const Footer = () => {

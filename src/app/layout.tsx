@@ -5,6 +5,7 @@ import { FC, ReactNode } from "react";
 import { Navbar } from "@/components/navbar/Navbar";
 
 import "./globals.css";
+
 import { Footer } from "@/components/footer/Footer";
 
 const inter = Montserrat({
