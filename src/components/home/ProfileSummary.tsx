@@ -21,8 +21,8 @@ export const ProfileSummary = () => {
   };
 
   return (
-    <div className="flex flex-col-reverse gap-4 sm:flex-row sm:gap-12">
-      <div className="flex flex-col items-start py-4">
+    <div className="flex flex-col-reverse gap-4 sm:flex-row sm:gap-14">
+      <div className="flex flex-col items-start py-3">
         <p className="text-lg text-cyan-300">Frontend Developer</p>
         <h2 className="mt-2 text-4xl font-bold">Haasin Farooq</h2>
         <p className="mt-6 text-gray-400">
@@ -41,8 +41,8 @@ export const ProfileSummary = () => {
           className="rounded-full border-4 grayscale"
           src={ProfilePicture}
           alt="profile picture"
-          width={isSm ? 260 : 120}
-          height={isSm ? 260 : 120}
+          width={isSm ? 280 : 120}
+          height={isSm ? 280 : 120}
         />
       </div>
     </div>
