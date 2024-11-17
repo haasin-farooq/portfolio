@@ -12,7 +12,7 @@ export const InfoCard: FC<PropsWithChildren<InfoCardProps>> = ({
   className: classNameProp = "",
   children,
 }) => {
-  const className = `rounded-3xl bg-gradient-to-br from-[#202020] via-[#181818] to-[#121212] ${classNameProp}`;
+  const className = `rounded-3xl border-[#171717] border bg-gradient-to-br from-[#202020] via-[#181818] to-[#121212] ${classNameProp}`;
 
   return href ? (
     <Link href={href} className={`group relative ${className}`}>

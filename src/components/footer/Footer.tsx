@@ -16,8 +16,8 @@ export const Footer = () => {
         <div className="flex flex-col items-center gap-4 md:flex-row md:gap-8">
           <FooterLink name="Facebook" href={FACEBOOK_URL} />
           <FooterLink name="Instagram" href={INSTAGRAM_URL} />
-          <FooterLink name="GitHub" href={GITHUB_URL} />
           <FooterLink name="LinkedIn" href={LINKEDIN_URL} />
+          <FooterLink name="GitHub" href={GITHUB_URL} />
         </div>
         <p className="text-sm text-gray-400">
           © {currentYear} All rights reserved.
