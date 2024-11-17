@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import { Breakpoints, useMediaQuery } from "@/utils/hooks/use-media-query";
+import { Breakpoints, useMediaQuery } from "@/utils/hooks/useMediaQuery";
 
 import ProfilePicture from "../../assets/images/profile-picture.png";
 import { Button } from "../common/Button";
@@ -24,7 +24,7 @@ export const ProfileSummary = () => {
     <div className="flex flex-col-reverse gap-4 sm:flex-row sm:gap-14">
       <div className="flex flex-col items-start py-3">
         <p className="text-lg text-cyan-300">Frontend Developer</p>
-        <h2 className="mt-2 text-4xl font-bold">Haasin Farooq</h2>
+        <h1 className="mt-2 text-4xl font-bold">Haasin Farooq</h1>
         <p className="mt-6 text-gray-400">
           A Frontend Developer based in Finland with a versatile skill set in
           technologies like{" "}

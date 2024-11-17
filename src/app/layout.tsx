@@ -24,7 +24,7 @@ interface RootLayoutProp {
 const RootLayout: FC<RootLayoutProp> = ({ children }) => {
   return (
     <html lang="en">
-      <body className={`bg-gradient-to-t from-slate-900 ${inter.className}`}>
+      <body className={`bg-black-primary ${inter.className}`}>
         <Navbar />
         <div className="min-h-screen p-8 pt-28 sm:p-10 sm:pt-28">
           {children}

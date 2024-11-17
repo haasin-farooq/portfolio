@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Fade as Hamburger } from "hamburger-react";
 import { useState } from "react";
 
-import { Breakpoints, useMediaQuery } from "@/utils/hooks/use-media-query";
+import { Breakpoints, useMediaQuery } from "@/utils/hooks/useMediaQuery";
 
 import { NavLink } from "./NavLink";
 
