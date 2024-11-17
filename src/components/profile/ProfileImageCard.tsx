@@ -1,7 +1,8 @@
-import { InfoCard } from "../InfoCard";
 import Image from "next/image";
-import ProfilePicture from "../../assets/images/profile-picture.jpg";
 import { type FC } from "react";
+
+import ProfilePicture from "../../assets/images/profile-picture.jpg";
+import { InfoCard } from "../InfoCard";
 
 interface ProfileImageCardProps {
   className?: string;

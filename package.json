@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "yarn lint:base ./",
+    "lint": "eslint --fix --ext .js,.jsx .",
     "lint:base": "eslint --ext .js,.jsx,.ts,.tsx,.mjs,.cjs --quiet"
   },
   "dependencies": {

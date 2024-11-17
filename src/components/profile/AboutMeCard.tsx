@@ -1,5 +1,6 @@
-import { InfoCard } from "../InfoCard";
 import { type FC } from "react";
+
+import { InfoCard } from "../InfoCard";
 
 interface AboutMeCardProps {
   className?: string;

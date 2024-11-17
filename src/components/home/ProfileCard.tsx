@@ -1,8 +1,8 @@
-import { type FC } from "react";
-import { InfoCard } from "../InfoCard";
 import Image from "next/image";
+import { type FC } from "react";
 
 import ProfilePicture from "../../assets/images/profile-picture-2.jpg";
+import { InfoCard } from "../InfoCard";
 
 export const ProfileCard: FC = () => {
   return (
@@ -18,11 +18,11 @@ export const ProfileCard: FC = () => {
         />
       </div>
       <div className="flex flex-col gap-1">
-        <h3 className="text-gray-light text-xs font-medium uppercase">
+        <h3 className="text-xs font-medium uppercase text-gray-light">
           A Frontend Developer
         </h3>
         <h2 className="text-3xl font-medium text-white">Haasin Farooq.</h2>
-        <p className="text-gray-light mt-2">
+        <p className="mt-2 text-gray-light">
           I am a Frontend Developer based in Finland.
         </p>
       </div>

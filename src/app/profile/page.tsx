@@ -1,6 +1,7 @@
 import { type FC } from "react";
-import { ProfileImageCard } from "@/components/profile/ProfileImageCard";
+
 import { AboutMeCard } from "@/components/profile/AboutMeCard";
+import { ProfileImageCard } from "@/components/profile/ProfileImageCard";
 
 const ProfilePage: FC = () => {
   return (

@@ -1,6 +1,6 @@
-import Link from "next/link";
-import type { PropsWithChildren, FC } from "react";
 import { MoveRight } from "lucide-react";
+import Link from "next/link";
+import type { FC, PropsWithChildren } from "react";
 
 interface InfoCardProps {
   href?: string;
@@ -17,7 +17,7 @@ export const InfoCard: FC<PropsWithChildren<InfoCardProps>> = ({
   return href ? (
     <Link href={href} className={`group relative ${className}`}>
       {children}
-      <MoveRight className="text-gray-light absolute bottom-6 right-6 size-6 group-hover:text-white" />
+      <MoveRight className="absolute bottom-6 right-6 size-6 text-gray-light group-hover:text-white" />
     </Link>
   ) : (
     <div className={className}>{children}</div>
