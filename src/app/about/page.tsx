@@ -1,9 +1,9 @@
 import { type FC } from "react";
 
 import { AboutMeCard } from "@/components/about/AboutMeCard";
-import { ProfileImageCard } from "@/components/about/ProfileImageCard";
 import { ExperienceCard } from "@/components/about/ExperienceCard";
 import { EducationCard } from "@/components/about/EducationCard";
+import { ProfileImageCard } from "@/components/about/ProfileImageCard";
 
 const AboutPage: FC = () => {
   return (
