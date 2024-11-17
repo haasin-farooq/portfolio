@@ -1,7 +1,7 @@
+import { Signature } from "lucide-react";
 import { type FC } from "react";
 
 import { InfoCard } from "../InfoCard";
-import { Signature } from "lucide-react";
 
 export const CredentialsCard: FC = () => {
   return (
