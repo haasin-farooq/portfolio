@@ -17,7 +17,7 @@ export const InfoCard: FC<PropsWithChildren<InfoCardProps>> = ({
   return href ? (
     <Link href={href} className={`group relative ${className}`}>
       {children}
-      <MoveRight className="absolute bottom-6 right-6 size-6 text-gray-light group-hover:text-white" />
+      <MoveRight className="absolute bottom-6 right-6 size-6 text-gray-light transition delay-75 ease-in-out group-hover:text-white" />
     </Link>
   ) : (
     <div className={className}>{children}</div>

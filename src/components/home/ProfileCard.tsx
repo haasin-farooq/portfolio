@@ -19,7 +19,7 @@ export const ProfileCard: FC = () => {
         />
       </div>
       <div className="flex flex-col gap-1">
-        <h3 className="text-xs font-medium uppercase text-gray-light">
+        <h3 className="text-xs font-medium uppercase text-cyan-300">
           A Frontend Developer
         </h3>
         <h2 className="text-3xl font-medium text-white">Haasin Farooq.</h2>

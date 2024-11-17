@@ -7,8 +7,8 @@ import { NavMenu } from "./NavMenu";
 
 export const Navbar = () => {
   return (
-    <nav className="fixed top-0 z-10 flex h-20 w-full items-center bg-black-primary/80 p-4 md:px-8">
-      <div className="relative flex w-full items-center justify-between gap-4">
+    <nav className="fixed top-0 z-10 flex h-20 w-full items-center bg-black-primary/80">
+      <div className="relative mx-auto flex w-full max-w-[110ch] items-center justify-between gap-4 p-6">
         <Link href="/" className="cursor-pointer">
           <Image src={Logo} alt="Logo" width={48} height={48} />
         </Link>
