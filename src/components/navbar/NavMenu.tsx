@@ -41,7 +41,7 @@ export const NavMenu = () => {
         <NavLink name="Work" href="/" />
         <NavLink name="Projects" href="/" />
       </motion.ul>
-      <ul className="hidden items-center space-x-3 sm:flex">
+      <ul className="hidden items-center space-x-3 md:flex">
         <NavLink name="About" href="/" />
         <NavLink name="Work" href="/" />
         <NavLink name="Projects" href="/" />

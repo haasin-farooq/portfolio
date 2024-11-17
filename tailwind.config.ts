@@ -15,6 +15,7 @@ const config: Config = {
         },
         gray: {
           light: "rgba(139, 139, 139, 1)",
+          "extra-light": "rgba(210, 210, 210, 1)",
         },
       },
       fontSize: {

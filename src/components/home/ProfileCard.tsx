@@ -2,7 +2,7 @@ import { type FC } from "react";
 import { InfoCard } from "../InfoCard";
 import Image from "next/image";
 
-import ProfilePicture from "../../assets/images/profile-picture.jpg";
+import ProfilePicture from "../../assets/images/profile-picture-2.jpg";
 
 export const ProfileCard: FC = () => {
   return (

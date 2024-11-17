@@ -31,7 +31,7 @@ export const Button: FC<ButtonProps> = ({
   return (
     <button
       type="button"
-      className={`flex items-center justify-center space-x-2 rounded-lg border border-white px-5 py-3.5 leading-tight transition duration-300 ease-in-out hover:border-cyan-300 sm:whitespace-nowrap ${
+      className={`flex items-center justify-center space-x-2 rounded-lg border border-white px-5 py-3.5 leading-tight transition duration-300 ease-in-out hover:border-cyan-300 md:whitespace-nowrap ${
         disabled ? "cursor-not-allowed opacity-50" : "cursor-pointer"
       } ${ButtonWidthToStyles[width]} ${className}`}
       aria-label={label}
