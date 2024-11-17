@@ -31,7 +31,7 @@ export const NavMenu = () => {
         />
       )}
       <motion.ul
-        className="bg-black absolute left-0 w-full p-4"
+        className="absolute left-0 w-full bg-black-primary p-4"
         initial="closed"
         animate={isOpen ? "open" : "closed"}
         variants={variants}
