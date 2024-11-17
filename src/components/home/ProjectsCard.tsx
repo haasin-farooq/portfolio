@@ -12,7 +12,7 @@ export const ProjectsCard: FC = () => {
       <Laptop className="size-8" />
       <div className="flex flex-col gap-1">
         <h3 className="text-xxs uppercase text-gray-light">Showcase</h3>
-        <h2 className="text-xl font-medium text-white">Projects.</h2>
+        <h2 className="text-xl font-medium text-white">Projects</h2>
       </div>
     </InfoCard>
   );

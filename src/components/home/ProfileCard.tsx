@@ -14,6 +14,7 @@ export const ProfileCard: FC = () => {
         <Image
           className="rounded-br-3xl rounded-tl-3xl grayscale"
           src={ProfilePicture}
+          placeholder="blur"
           alt="profile picture"
         />
       </div>

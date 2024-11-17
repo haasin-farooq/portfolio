@@ -6,7 +6,7 @@ import { EducationCard } from "@/components/about/EducationCard";
 import { ExperienceCard } from "@/components/about/ExperienceCard";
 import { ProfileImageCard } from "@/components/about/ProfileImageCard";
 
-const AboutPage: FC = () => {
+const CredentialsPage: FC = () => {
   return (
     <div className="flex flex-col gap-6 md:gap-8">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
@@ -22,4 +22,4 @@ const AboutPage: FC = () => {
   );
 };
 
-export default AboutPage;
+export default CredentialsPage;

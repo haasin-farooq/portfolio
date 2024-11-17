@@ -15,6 +15,7 @@ export const ProfileImageCard: FC<ProfileImageCardProps> = ({ className }) => {
         <Image
           className="rounded-3xl grayscale"
           src={ProfilePicture}
+          placeholder="blur"
           alt="profile picture"
         />
       </div>
