@@ -1,16 +1,17 @@
+import { Facebook, Github, Instagram, Linkedin } from "lucide-react";
 import Image from "next/image";
 import { type FC } from "react";
 
-import ProfilePicture from "../../assets/images/profile-picture-2.jpg";
-import { InfoCard } from "../InfoCard";
-import { Facebook, Github, Instagram, Linkedin } from "lucide-react";
-import { SocialInfo } from "../common/SocialInfo";
 import {
   FACEBOOK_URL,
   GITHUB_URL,
   INSTAGRAM_URL,
   LINKEDIN_URL,
 } from "@/utils/constants";
+
+import ProfilePicture from "../../assets/images/profile-picture-2.jpg";
+import { InfoCard } from "../InfoCard";
+import { SocialInfo } from "../common/SocialInfo";
 
 interface ProfileCardWithSocialsProps {
   className?: string;

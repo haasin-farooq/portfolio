@@ -1,5 +1,6 @@
 import { LucideProps } from "lucide-react";
-import type { ForwardRefExoticComponent, FC, RefAttributes } from "react";
+import type { FC, ForwardRefExoticComponent, RefAttributes } from "react";
+
 import { InfoCard } from "../InfoCard";
 
 interface SocialInfoProps {
