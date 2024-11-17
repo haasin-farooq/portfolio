@@ -26,7 +26,7 @@ const RootLayout: FC<RootLayoutProp> = ({ children }) => {
     <html lang="en">
       <body className={`bg-black-primary ${inter.className}`}>
         <Navbar />
-        <div className="mx-auto min-h-screen max-w-[110ch] p-8 pt-32 md:pt-40">
+        <div className="mx-auto min-h-screen max-w-[110ch] p-6 pb-20 pt-32 md:pt-40">
           {children}
         </div>
         <Footer />

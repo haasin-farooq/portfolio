@@ -7,7 +7,7 @@ import { InfoCard } from "../InfoCard";
 export const ProfileCard: FC = () => {
   return (
     <InfoCard
-      href="/profile"
+      href="/about"
       className="flex max-w-xl flex-col items-center justify-center gap-8 p-10 md:flex-row"
     >
       <div className="w-full shrink-0 md:size-48">
