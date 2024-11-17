@@ -31,7 +31,9 @@ const Stat: FC<StatProps> = ({ label, className }) => {
     <InfoCard className="flex flex-col items-center justify-center gap-3 p-8 text-center">
       <h2
         className={`animate-[counter_2s_ease-out_forwards] text-4xl font-medium tabular-nums before:content-[counter(num)] ${className}`}
-      />
+      >
+        <span className="sr-only">Stat</span>
+      </h2>
       <p className="text-xxs uppercase text-gray-light">{label}</p>
     </InfoCard>
   );
