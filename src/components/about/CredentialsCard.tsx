@@ -7,7 +7,7 @@ export const CredentialsCard: FC = () => {
   return (
     <InfoCard
       href="/credentials"
-      className="flex break-inside-avoid flex-col gap-3 p-8"
+      className="flex break-inside-avoid flex-col justify-center gap-3 p-8"
     >
       <Signature />
       <div className="flex flex-col gap-1">

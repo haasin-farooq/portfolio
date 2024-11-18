@@ -2,8 +2,8 @@ import { type FC } from "react";
 
 import { AboutMeCard } from "@/components/about/AboutMeCard";
 import { CredentialsCard } from "@/components/about/CredentialsCard";
-import { EducationCard } from "@/components/about/EducationCard";
-import { ExperienceCard } from "@/components/about/ExperienceCard";
+import { EducationSection } from "@/components/about/EducationSection";
+import { ExperienceSection } from "@/components/about/ExperienceSection";
 import { ProfileImageCard } from "@/components/about/ProfileImageCard";
 
 const AboutPage: FC = () => {
@@ -14,8 +14,8 @@ const AboutPage: FC = () => {
         <AboutMeCard className="md:col-span-2" />
       </div>
       <div className="columns-1 gap-8 space-y-6 md:columns-2 md:space-y-8">
-        <ExperienceCard />
-        <EducationCard />
+        <ExperienceSection className="break-inside-avoid" isCard />
+        <EducationSection className="break-inside-avoid" isCard />
         <CredentialsCard />
       </div>
     </div>
