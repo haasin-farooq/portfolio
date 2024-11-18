@@ -5,6 +5,7 @@ import { InfoCard } from "../InfoCard";
 interface ExperienceSectionProps {
   isCard?: boolean;
   highlightPosition?: boolean;
+  withDescription?: boolean;
   className?: string;
   titleClassName?: string;
 }
@@ -12,6 +13,7 @@ interface ExperienceSectionProps {
 export const ExperienceSection: FC<ExperienceSectionProps> = ({
   isCard,
   highlightPosition,
+  withDescription,
   className,
   titleClassName,
 }) => {
@@ -26,6 +28,11 @@ export const ExperienceSection: FC<ExperienceSectionProps> = ({
           position="Frontend Developer"
           company="Gubbe"
           location="Helsinki, Finland · Hybrid"
+          description={
+            withDescription
+              ? "As a Frontend Developer at Gubbe, I lead the development of a matchmaking platform revolutionizing elderly care across Finland and Sweden. By utilizing a modern tech stack—Next.js, TypeScript, and Tailwind CSS—I’ve significantly improved the user interface and experience. My role involves implementing new features, conducting end-to-end tests using Playwright, and ensuring high coding standards through regular code reviews, driving both innovation and scalability."
+              : null
+          }
           highlightPosition={highlightPosition}
         />
         <Experience
@@ -33,6 +40,11 @@ export const ExperienceSection: FC<ExperienceSectionProps> = ({
           position="Frontend Engineer"
           company="Leland"
           location="United States · Remote"
+          description={
+            withDescription
+              ? "At Leland, I played a key role in building an online coaching platform using Next.js, TypeScript, and GraphQL. By refactoring components and optimizing the UI, I contributed to a 10x increase in live coaching sessions and a 4x boost in signups. My work included integrating communication tools like Sendbird and Whereby, enhancing user engagement and platform efficiency, while ensuring responsive design with Tailwind CSS."
+              : null
+          }
           highlightPosition={highlightPosition}
         />
         <Experience
@@ -40,6 +52,11 @@ export const ExperienceSection: FC<ExperienceSectionProps> = ({
           position="Software Engineer"
           company="Tintash"
           location="Lahore, Pakistan · Hybrid"
+          description={
+            withDescription
+              ? "During my time at Tintash, I led frontend projects, including the development of Ferrum Health's website on Webflow and an e-learning platform, Kooledge, using ReactJS. I mentored junior engineers, conducted code reviews, and improved project estimations, leading to increased productivity and timely project deliveries. Additionally, my contributions enhanced the quality of new hires and aligned project outcomes with industry best practices."
+              : null
+          }
           highlightPosition={highlightPosition}
         />
         <Experience
@@ -74,6 +91,7 @@ interface ExperienceProps {
   position: string;
   company: string;
   location?: string;
+  description?: string | null;
   highlightPosition?: boolean;
 }
 
@@ -82,6 +100,7 @@ const Experience: FC<ExperienceProps> = ({
   position,
   company,
   location,
+  description,
   highlightPosition,
 }) => {
   return (
@@ -98,6 +117,7 @@ const Experience: FC<ExperienceProps> = ({
           <p className="text-xs text-gray-light">{location}</p>
         ) : null}
       </div>
+      {description ? <p className="mt-2">{description}</p> : null}
     </div>
   );
 };
