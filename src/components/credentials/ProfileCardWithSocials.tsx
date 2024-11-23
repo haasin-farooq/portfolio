@@ -1,17 +1,9 @@
-import { Facebook, Github, Instagram, Linkedin } from "lucide-react";
 import Image from "next/image";
 import { type FC } from "react";
 
-import {
-  FACEBOOK_URL,
-  GITHUB_URL,
-  INSTAGRAM_URL,
-  LINKEDIN_URL,
-} from "@/utils/constants";
-
 import ProfilePicture from "../../assets/images/profile-picture-2.jpg";
 import { InfoCard } from "../InfoCard";
-import { SocialInfo } from "../common/SocialInfo";
+import { Socials } from "../common/Socials";
 
 interface ProfileCardWithSocialsProps {
   className?: string;
@@ -31,12 +23,7 @@ export const ProfileCardWithSocials: FC<ProfileCardWithSocialsProps> = ({
         />
       </div>
       <h2 className="text-3xl font-medium">Haasin Farooq</h2>
-      <div className="flex items-center justify-center gap-3">
-        <SocialInfo href={FACEBOOK_URL} Icon={Facebook} />
-        <SocialInfo href={INSTAGRAM_URL} Icon={Instagram} />
-        <SocialInfo href={LINKEDIN_URL} Icon={Linkedin} />
-        <SocialInfo href={GITHUB_URL} Icon={Github} />
-      </div>
+      <Socials />
     </InfoCard>
   );
 };

@@ -37,13 +37,13 @@ export const NavMenu = () => {
         variants={variants}
         transition={{ duration: 0.3 }}
       >
-        <NavLink name="About" href="/" />
-        <NavLink name="Work" href="/" />
+        <NavLink name="Home" href="/" />
+        <NavLink name="About" href="/about" />
         <NavLink name="Projects" href="/" />
       </motion.ul>
       <ul className="hidden items-center space-x-3 md:flex">
-        <NavLink name="About" href="/" />
-        <NavLink name="Work" href="/" />
+        <NavLink name="Home" href="/" />
+        <NavLink name="About" href="/about" />
         <NavLink name="Projects" href="/" />
       </ul>
     </>
