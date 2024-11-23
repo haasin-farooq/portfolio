@@ -104,7 +104,7 @@ const Recommendation: FC<RecommendationProps> = ({
 }) => {
   return (
     <div className="flex flex-col gap-4">
-      <p>{recommendation}</p>
+      <p className="italic text-gray-extra-light">{recommendation}</p>
       <div className="flex items-center gap-4">
         <div className="size-12 shrink-0">
           <Image
