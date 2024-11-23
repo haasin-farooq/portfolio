@@ -2,9 +2,13 @@ import { type FC } from "react";
 
 import { InfoCard } from "../InfoCard";
 
-export const StatsCard: FC = () => {
+interface StatsCardProps {
+  className?: string;
+}
+
+export const StatsCard: FC<StatsCardProps> = ({ className }) => {
   return (
-    <InfoCard className="grid gap-8 p-8 md:grid-cols-3">
+    <InfoCard className={`grid gap-8 p-8 md:grid-cols-3 ${className}`}>
       <Stat
         className="[counter-set:_num_var(--num-experience)]"
         label="Years experience"
