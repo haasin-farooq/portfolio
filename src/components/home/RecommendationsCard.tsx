@@ -81,7 +81,7 @@ export const RecommendationsCard: FC<RecommendationsCardProps> = ({
             name="Benjamin Nguyen, MD"
             title="Lead Product Manager, TranscarentProduct"
             image={Benjamin}
-            recommendation="Haasin helped us build out our company's website on Webflow. From start to finish, Haasin was responsive, skillful, and stayed within our budget. He was also very communicative, and enabled us to clear up any misunderstandings immediately. We couldn't be happier with the resulting website! Haasin helped us build out our company's website on Webflow. From start to finish, Haasin was responsive, skillful, and stayed within our budget. He was also very communicative, and enabled us to clear up any misunderstandings immediately. We couldn't be happier with the resulting website!"
+            recommendation="Haasin helped us build out our company's website on Webflow. From start to finish, Haasin was responsive, skillful, and stayed within our budget. He was also very communicative, and enabled us to clear up any misunderstandings immediately. We couldn't be happier with the resulting website!"
           />
         ) : null}
       </div>
