@@ -7,6 +7,7 @@ import { useState } from "react";
 import { Breakpoints, useMediaQuery } from "@/utils/hooks/useMediaQuery";
 
 import { NavLink } from "./NavLink";
+import { DownloadCVButton } from "./DownloadCVButton";
 
 const COLOR_PORTFOLIO_SLATE = "#67e8f9";
 
@@ -31,7 +32,7 @@ export const NavMenu = () => {
         />
       )}
       <motion.ul
-        className="absolute left-0 w-full bg-black-primary p-4"
+        className="absolute left-0 flex w-full flex-col items-center justify-center bg-black-primary p-4"
         initial="closed"
         animate={isOpen ? "open" : "closed"}
         variants={variants}
@@ -40,6 +41,7 @@ export const NavMenu = () => {
         <NavLink name="Home" href="/" />
         <NavLink name="About" href="/about" />
         <NavLink name="Projects" href="/" />
+        <DownloadCVButton className="mt-2" />
       </motion.ul>
       <ul className="hidden items-center space-x-3 md:flex">
         <NavLink name="Home" href="/" />

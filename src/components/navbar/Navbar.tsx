@@ -4,6 +4,7 @@ import Link from "next/link";
 import Logo from "../../assets/images/logo.png";
 
 import { NavMenu } from "./NavMenu";
+import { DownloadCVButton } from "./DownloadCVButton";
 
 export const Navbar = () => {
   return (
@@ -13,6 +14,7 @@ export const Navbar = () => {
           <Image src={Logo} alt="Logo" width={48} height={48} />
         </Link>
         <NavMenu />
+        <DownloadCVButton className="hidden md:block" />
       </div>
       <div className="h-20">&nbsp;</div>
     </nav>

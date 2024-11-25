@@ -38,7 +38,7 @@ const Stat: FC<StatProps> = ({ label, className }) => {
       >
         <span className="sr-only">Stat</span>
       </h2>
-      <p className="text-xxs uppercase text-gray-light">{label}</p>
+      <p className="text-xs uppercase text-gray-light">{label}</p>
     </InfoCard>
   );
 };
