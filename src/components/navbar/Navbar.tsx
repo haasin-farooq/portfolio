@@ -3,8 +3,8 @@ import Link from "next/link";
 
 import Logo from "../../assets/images/logo.png";
 
-import { NavMenu } from "./NavMenu";
 import { DownloadCVButton } from "./DownloadCVButton";
+import { NavMenu } from "./NavMenu";
 
 export const Navbar = () => {
   return (

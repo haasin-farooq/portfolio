@@ -6,8 +6,8 @@ import { useState } from "react";
 
 import { Breakpoints, useMediaQuery } from "@/utils/hooks/useMediaQuery";
 
-import { NavLink } from "./NavLink";
 import { DownloadCVButton } from "./DownloadCVButton";
+import { NavLink } from "./NavLink";
 
 const COLOR_PORTFOLIO_SLATE = "#67e8f9";
 
