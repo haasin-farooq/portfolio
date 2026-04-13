@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { type FC } from "react";
 
-import ProfilePicture from "../../assets/images/profile-picture-2.jpg";
+import ProfilePicture from "../../assets/images/profile-picture-3.jpg";
 import { InfoCard } from "../InfoCard";
 
 export const ProfileCard: FC = () => {
@@ -12,7 +12,7 @@ export const ProfileCard: FC = () => {
     >
       <div className="w-full shrink-0 md:size-48">
         <Image
-          className="rounded-br-3xl rounded-tl-3xl grayscale"
+          className="rounded-br-3xl rounded-tl-3xl object-cover object-top grayscale md:size-48"
           src={ProfilePicture}
           placeholder="blur"
           alt="profile picture"
@@ -20,11 +20,11 @@ export const ProfileCard: FC = () => {
       </div>
       <div className="flex flex-col gap-1">
         <h3 className="text-xs font-medium uppercase text-cyan-300">
-          A Frontend Developer
+          A Frontend Engineer
         </h3>
         <h2 className="text-3xl font-medium text-white">Haasin Farooq.</h2>
         <p className="mt-2 text-gray-light">
-          I am a Frontend Developer based in Finland.
+          I am a Frontend Engineer based in Finland.
         </p>
       </div>
     </InfoCard>

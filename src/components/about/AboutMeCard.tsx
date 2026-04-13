@@ -10,20 +10,21 @@ export const AboutMeCard: FC<AboutMeCardProps> = ({ className }) => {
   return (
     <InfoCard className={`flex flex-col gap-4 p-8 ${className}`}>
       <h1 className="text-4xl font-medium text-white">Haasin Farooq</h1>
-      <p className="text-gray-extra-light">
-        I&apos;m a Frontend Developer based in Finland with expertise in
-        ReactJS, Next.js, TypeScript, and JavaScript. I have 4+ years of
-        professional experience, and have led impactful projects and mentored
-        teams at companies like Leland and Tintash. Currently, I&apos;m working
-        at Gubbe, a Finnish startup revolutionizing elderly care by creating the
-        best matchmaking platform for homes and nursing facilities in Finland
-        and Sweden.
-      </p>
-      <p className="text-gray-extra-light">
-        I&apos;m also pursuing a Master&apos;s in Software Product Management &
-        Business at LUT University, enhancing my skills at the intersection of
-        technology and business.
-      </p>
+      <div className="flex flex-col gap-4">
+        <p className="text-gray-extra-light">
+          I&apos;m a Software Engineer with 5+ years of professional experience
+          specializing in front-end development using ReactJS, Next.js,
+          TypeScript, JavaScript, and Tailwind CSS. I combine technical
+          expertise with creative problem-solving to deliver scalable,
+          user-friendly, and impactful solutions.
+        </p>
+        <p className="text-gray-extra-light">
+          Alongside my work, I&apos;m pursuing a Master&apos;s degree in
+          Software Product Management & Business at LUT University in Finland.
+          This program is helping me deepen my understanding of how technology
+          and business intersect to solve real-world problems.
+        </p>
+      </div>
     </InfoCard>
   );
 };

@@ -24,17 +24,31 @@ export const ExperienceSection: FC<ExperienceSectionProps> = ({
       </h1>
       <div className="flex flex-col gap-8">
         <Experience
-          period="Mar 2024 - Present"
+          period="Jan 2025 - Present"
+          position="Software Engineer"
+          company="RB Global (Ritchie Bros.)"
+          location="Helsinki, Finland · Hybrid"
+          description={
+            withDescription
+              ? "At RB Global, I build buyer-facing product features across checkout, payments, invoices, account settings, and transportation flows in a large-scale marketplace environment. My work includes improving checkout and invoice experiences, integrating frontend features with backend services and APIs, maintaining strong test coverage through unit, integration, and contract tests, and using pair programming and pull request reviews to support code quality. I also work with observability tooling like Honeycomb to monitor production behavior and improve issue detection."
+              : null
+          }
+          highlightPosition={highlightPosition}
+        />
+
+        <Experience
+          period="Mar 2024 - Dec 2024"
           position="Frontend Developer"
           company="Gubbe"
           location="Helsinki, Finland · Hybrid"
           description={
             withDescription
-              ? "As a Frontend Developer at Gubbe, I lead the development of a matchmaking platform revolutionizing elderly care across Finland and Sweden. By utilizing a modern tech stack—Next.js, TypeScript, and Tailwind CSS—I’ve significantly improved the user interface and experience. My role involves implementing new features, conducting end-to-end tests using Playwright, and ensuring high coding standards through regular code reviews, driving both innovation and scalability."
+              ? "At Gubbe, I rebuilt the Staff app from scratch using React, Next.js, and TypeScript, creating a more scalable and maintainable frontend foundation. I also contributed significantly to redeveloping the Gubbe Admin app using Refine, Tailwind CSS, and Radix UI, while building new frontend features, creating prototypes in Figma, and strengthening product quality through Playwright testing and code reviews."
               : null
           }
           highlightPosition={highlightPosition}
         />
+
         <Experience
           period="Jul 2021 - Feb 2024"
           position="Frontend Engineer"
@@ -42,11 +56,12 @@ export const ExperienceSection: FC<ExperienceSectionProps> = ({
           location="United States · Remote"
           description={
             withDescription
-              ? "At Leland, I played a key role in building an online coaching platform using Next.js, TypeScript, and GraphQL. By refactoring components and optimizing the UI, I contributed to a 10x increase in live coaching sessions and a 4x boost in signups. My work included integrating communication tools like Sendbird and Whereby, enhancing user engagement and platform efficiency, while ensuring responsive design with Tailwind CSS."
+              ? "At Leland, I contributed to the frontend development of an online coaching platform using React, Next.js, TypeScript, GraphQL, and Tailwind CSS. I worked across multiple repositories, improved code modularity through Storybook and isolated component development, refactored legacy frontend code into reusable components, and built responsive, data-driven features that supported the platform during a high-growth phase."
               : null
           }
           highlightPosition={highlightPosition}
         />
+
         <Experience
           period="Sep 2020 - Feb 2024"
           position="Software Engineer"
@@ -54,11 +69,12 @@ export const ExperienceSection: FC<ExperienceSectionProps> = ({
           location="Lahore, Pakistan · Hybrid"
           description={
             withDescription
-              ? "During my time at Tintash, I led frontend projects, including the development of Ferrum Health's website on Webflow and an e-learning platform, Kooledge, using ReactJS. I mentored junior engineers, conducted code reviews, and improved project estimations, leading to increased productivity and timely project deliveries. Additionally, my contributions enhanced the quality of new hires and aligned project outcomes with industry best practices."
+              ? "At Tintash, I worked on frontend-focused projects including Kooledge, an e-learning platform built with React and SCSS. I also mentored junior engineers through code reviews and technical guidance, supported hiring through coding assessments, and contributed to project estimation and feature improvement discussions."
               : null
           }
           highlightPosition={highlightPosition}
         />
+
         <Experience
           period="Jun 2019 - Aug 2019"
           position="Software Developer Intern"
@@ -66,6 +82,7 @@ export const ExperienceSection: FC<ExperienceSectionProps> = ({
           location="Lahore, Pakistan · On-site"
           highlightPosition={highlightPosition}
         />
+
         <Experience
           period="Jul 2018 - Sep 2018"
           position="Android Developer Intern"
@@ -107,7 +124,9 @@ const Experience: FC<ExperienceProps> = ({
     <div className="flex flex-col gap-1 text-left">
       <p className="text-sm text-gray-light">{period}</p>
       <h3
-        className={`font-medium ${highlightPosition ? "text-cyan-300" : "text-white"}`}
+        className={`font-medium ${
+          highlightPosition ? "text-cyan-300" : "text-white"
+        }`}
       >
         {position}
       </h3>
