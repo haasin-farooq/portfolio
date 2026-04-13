@@ -9,10 +9,10 @@ import Image, { StaticImageData } from "next/image";
 import { type FC, useState } from "react";
 
 import Benjamin from "../../assets/images/benjamin.jpeg";
+import Bianca from "../../assets/images/bianca.jpeg";
 import John from "../../assets/images/john.jpeg";
 import Rodrigo from "../../assets/images/rodrigo.jpeg";
 import Zando from "../../assets/images/zando.jpeg";
-import Bianca from "../../assets/images/bianca.jpeg";
 import { InfoCard } from "../InfoCard";
 
 interface RecommendationsCardProps {
