@@ -11,6 +11,7 @@ import { type FC, useState } from "react";
 import Benjamin from "../../assets/images/benjamin.jpeg";
 import Bianca from "../../assets/images/bianca.jpeg";
 import John from "../../assets/images/john.jpeg";
+import Nadja from "../../assets/images/nadja.jpeg";
 import Rodrigo from "../../assets/images/rodrigo.jpeg";
 import Zando from "../../assets/images/zando.jpeg";
 import { InfoCard } from "../InfoCard";
@@ -45,12 +46,12 @@ export const RecommendationsCard: FC<RecommendationsCardProps> = ({
             <button
               type="button"
               className={
-                index === 3
+                index === 5
                   ? "text-gray-light"
                   : "text-gray-extra-light hover:text-white"
               }
               onClick={() => setIndex((prev) => prev + 1)}
-              disabled={index === 3}
+              disabled={index === 5}
             >
               <ChevronRightCircleIcon />
             </button>
@@ -58,33 +59,40 @@ export const RecommendationsCard: FC<RecommendationsCardProps> = ({
         </div>
         {index === 0 ? (
           <Recommendation
+            name="Nadja Zhuravleva"
+            title="Associate Software Engineer, RB Global"
+            image={Nadja}
+            recommendation="I worked closely with Haasin for over a year, frequently pairing on frontend development, observability, and testing, with some exposure to backend. He’s very easy to work with and communicates clearly. He listens to other perspectives and, when he has a different opinion, explains his reasoning calmly and walks through the pros and cons to help the team make better decisions. He writes high-quality code and pays attention to details. I also really appreciate that he takes the time to understand how things work under the hood, especially how different services interact, which leads to more solid and reliable solutions. Working with Haasin also helped me grow as a developer, which says a lot about the kind of teammate he is."
+          />
+        ) : index === 1 ? (
+          <Recommendation
             name="Bianca Behm"
             title="Cloud Engineer, Solita"
             image={Bianca}
             recommendation="I have had the privilege of working with Haasin at Gubbe. In addition to being a talented frontend developer, he has a keen eye for design and great attention to detail. Collaborating with Haasin has always been a joy, his enthusiasm for his work and commitment to improving quality, products, and processes are contagious. On top of delivering high-quality code, Haasin has also taken on responsibility of sharing his knowledge and supporting other team members. I highly recommend Haasin, anyone would be lucky to have him on their team!"
           />
-        ) : index === 1 ? (
+        ) : index === 2 ? (
           <Recommendation
             name="Zando Ward"
             title="Co-Founder, Head of Engineering at Leland"
             image={Zando}
             recommendation="Working with Haasin is a joy. He is a skilled frontend engineer with a passion and dedication for his work. Our timezones were nearly 12 hours apart, but he was great about being flexible with meeting times in order to accommodate the rest of the team. It wasn't uncommon that we'd send something his way at the end of our working day and wake up to a full set of PRs and features built. He's a great collaborator and keeps the user's perspective in mind when offering feedback and suggestions on product development. I'd recommend Haasin without hesitation — he'd be a valuable asset to any organization."
           />
-        ) : index === 2 ? (
+        ) : index === 3 ? (
           <Recommendation
             name="John Koelliker"
             title="CEO @ Leland | Forbes 30 Under 30"
             image={John}
             recommendation="Haasin has been such an incredible front-end contributor on our engineering team. He learns incredibly quickly, moves fast, communicates well, and has a bias towards action. I've also been impressed with his ability to be product-minded and think about the user's needs. He often brings ideas to the table of how we could make the product better, which shows how much he cares about quality and our business goals. Lastly, his calm demeanor makes him a pleasure to work with and enables him to build relationships quickly. Can't recommend him highly enough."
           />
-        ) : index === 3 ? (
+        ) : index === 4 ? (
           <Recommendation
             name="Rodrigo Belo"
             title="Professor of Information Systems, Nova School of Business and Economics"
             image={Rodrigo}
             recommendation="Haasin was the main developer of an education platform in ReactJS. Development was fast, communication always clear, and we were able to quickly come up with solutions for unforeseen edge cases. I have no reservations in recommending Haasin."
           />
-        ) : index === 4 ? (
+        ) : index === 5 ? (
           <Recommendation
             name="Benjamin Nguyen, MD"
             title="Lead Product Manager, TranscarentProduct"
